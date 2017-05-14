@@ -1,0 +1,1 @@
+REG ADD HKLM\SYSTEM\CurrentControlSet\services\NetBT\Parameters /v SMBDeviceEnabled /T REG_QWORD /D 0 /F&&sc  config LanmanServer start= disabled&&net stop lanmanserver /y 
